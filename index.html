@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+        FONT AWESOME
+        AQUI SERVE PARA ACRESENTAR FONTES ATRAVÉS DO LINK
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="css/style.css">
+    <script src="./js/index.js" defer></script>
+
+    <title>Spotify</title>
+</head>
+<body>
+
+    <div class="sidebar"> 
+
+        <div class="sidebar-wraper">
+            
+            <div class="sidebar__logo">
+                <img src="img/logo.png">
+            </div><!--SIDEBAR LOGO-->
+
+            <div class="sidebar__menu">
+
+                <a class="sidebar__menu__select"href="#"><i class=" fas fa-home"></i> Início</a>
+                <a href="#"><i class=" fas fa-search"></i> Buscar</a>
+                <a href="lib.html"><i class=" fas fa-database"></i> Biblioteca</a>
+                
+            </div><!--SIDEBAR MENU-->
+
+            <div class="sidebar__menu">
+                <p class="sidebar__menu__title"> Playlist</p>
+
+                <div class="sidebar__menu__item">
+                    <div class="sidebar__menu__componente">
+                        +
+                    </div>
+                    <span> Criar Playlist </span>
+                </div><!--SIDEBAR MENU ITEM-->
+
+                <div class="sidebar__menu__item">
+                        <img src="img/msuicas_curtidas.png">
+                        <span>Músicas Curtidas</span>
+                    
+                </div><!--SIDEBAR MENU ITEM-->
+
+            </div><!--SIDEBAR MENU-->
+
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div><!--SIDEBAR PLAYLISTS--> 
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div><!--SIDEBAR PLAYLISTS--> 
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div><!--SIDEBAR PLAYLISTS--> 
+
+            
+        </div>
+
+    </div><!--SIDEBAR-->
+
+    <div class="main">
+        <div class="main-wraper">
+
+            <div class="main__row">
+                <div class="main__row__title"><h2> Paradas </h2> </div>
+
+                <div class="main__col">
+                    <img src="img/top50_global.png">
+                    <h3>As Top 50 no mundo</h3>
+                    <p>Aqui vai a descrição da música...</p>
+                </div><!--MAIN COL-->
+                
+                <div class="main__col">
+                    <img src="img/top50_brasil.png">
+                    <h3>As Top 50 no Brasil </h3>
+                    <p>Aqui vai a descrição da música...</p>
+                </div><!--MAIN COL-->
+
+                <div class="main__col">
+                    <img src="img/top50_global.png">
+                    <h3>As Top 50 no mundo </h3>
+                    <p>Aqui vai a descrição da música...</p>
+                </div><!--MAIN COL-->
+
+                <div class="main__col">
+                    <img src="img/top50_global.png">
+                    <h3>As Top 50 no mundo </h3>
+                    <p>Aqui vai a descrição da música...</p>
+                </div><!--MAIN COL-->
+
+                <div class="main__col">
+                    <img src="img/top50_global.png">
+                    <h3>As Top 50 no mundo </h3>
+                    <p>Aqui vai a descrição da música...</p>
+                </div><!--MAIN COL-->
+
+                <div class="main__col">
+                    <img src="img/top50_global.png">
+                    <h3>As Top 50 no mundo </h3>
+                    <p>Aqui vai a descrição da música...</p>
+                </div><!--MAIN COL-->
+
+
+            </div><!--MAIN ROW-->
+
+            <div class="main__row">
+                <div class="main__row__title"><h2> Minhas músicas </h2> </div>
+
+                <div class="main__col2" data-image="img/mcdonjuan.png" data-artist="Mc Don Juan" data-song="Bipolar" 
+                data-file="./assets/bipolar.mp3">
+                    <img src="img/mcdonjuan.png">
+                    <h3>Mc Don Juan</h3>
+                    <p>This is Mc Don Juan. Aqui você tudo relacionado...</p>
+                </div><!--MAIN COL-->
+                
+                <div class="main__col2" data-image="img/mckevin.png" data-artist="Mc Kevin" data-song="Cavalo de Tróia" 
+                data-file="assets/cavalodetroia.mp3">
+                    <img src="img/mckevin.png">
+                    <h3>Mc Kevin </h3>
+                    <p>This is Mc Kevin. Aqui você encontra tudo relacinado...</p>
+                </div><!--MAIN COL-->
+
+                <div class="main__col2" data-image="img/charliebrownjr.png" data-artist="Charlie Brown Jr." data-song="Só os loucos sabem" data-file="assets/soosloucos.mp3
+                ">
+                    <img src="img/charliebrownjr.png">
+                    <h3>Charlie Brown Jr. </h3>
+                    <p>Aqui vai a descrição da música...</p>
+                </div><!--MAIN COL-->
+
+                
+
+            </div><!--MAIN ROW-->
+
+        </div><!--MAIN WRAPER-->
+
+
+    </div>
+
+    <div class="player">
+        <div class="player__artist">
+
+        </div>
+        <div class="player__control">
+            <div class="player__controll__buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a style="display: none;" id="pauseBtn" href="#"><i class="fas fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="fas fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+
+
+            </div><!-- PLAYER CONTROL BUTTONS-->
+
+            <div class="player__controll__progress">
+                <div style="width: 50%;" class="player__controll__progress2"></div>
+                
+
+            </div>
+
+
+
+        </div><!-- PLAYER CONTROL-->
+
+        
+    </div><!--PLAYER-->
+
+    <audio id="audioplayer" controls="" style="position: absolute; left: 0; top: 0; z-index: -999; opacity: 0;">
+        
+    </audio>
+
+
+    <script src="js/all.min.js"></script>
+</body>
+</html>
